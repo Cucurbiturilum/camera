@@ -19,41 +19,86 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
             crossorigin="anonymous"></script>
+    <script src="assets/js/main.js"></script>
 </head>
 <body>
 <!--Menu buttons-->
-<div class="d-flex justify-content-between fixed-bottom mb-5 mx-5">
+<div class="menu-bottom d-flex justify-content-between fixed-bottom mb-5 mx-5">
     <!--Right menu buttons-->
     <div class="right-menu">
         <!--        Chat-->
-        <div>
+        <div class="chat">
             <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalScrollable">
-                Launch demo modal
-            </button>
-
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog"
-                 aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-scrollable" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalScrollableTitle">Modal title</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            ...
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
-                        </div>
-                    </div>
+            <button type="button" class="btn" id="chat-panel-toggle">
+                <i class="far fa-comments"></i>
+                <div class="unread-message d-inline-block rounded-circle">
+                    3
                 </div>
+            </button>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal-content" id="chat-panel">
+    <div class="modal-body">
+        <div class="messages">
+            <p class="name">Olivia</p>
+            <div class="d-flex align-items-center">
+                <p class="message-text d-inline-block">Morning!</p>
+                <span class="time d-inline-block">13:56</span>
             </div>
         </div>
+        <div class="messages">
+            <p class="name">Ted</p>
+            <div class="d-flex align-items-center">
+                <p class="message-text d-inline-block">G'day!</p>
+                <span class="time d-inline-block">13:57</span>
+            </div>
+        </div>
+        <div class="messages">
+            <p class="name">Ann</p>
+            <div class="d-flex align-items-center">
+                <p class="message-text d-inline-block">Hello!</p>
+                <span class="time d-inline-block">13:59</span>
+            </div>
+        </div>
+        <div class="my-messages d-flex justify-content-end">
+            <div class="d-flex align-items-center">
+                <span class="time d-inline-block">14:00</span>
+                <p class="message-text d-inline-block">Hi!</p>
+            </div>
+        </div>
+        <div class="messages">
+            <p class="name">Ann</p>
+            <div class="d-flex align-items-center">
+                <p class="message-text d-inline-block">Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Accusantium aut consequatur deleniti dolores dolorum eaque et
+                    eveniet fuga mollitia natus necessitatibus perspiciatis, quas repellat sequi
+                    velit? Dolores molestias odio sequi!</p>
+                <span class="time d-inline-block">14:28</span>
+            </div>
+        </div>
+        <div class="my-messages d-flex justify-content-end">
+            <div class="d-flex align-items-center">
+                <span class="time d-inline-block">14:32</span>
+                <p class="message-text d-inline-block">Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Hic odit omnis porro quasi sit! Debitis earum et ex ipsum modi
+                    necessitatibus odit, placeat qui quisquam ratione reiciendis suscipit,
+                    temporibus totam?</p>
+            </div>
+        </div>
+        <div class="messages">
+            <p class="name">Ted</p>
+            <div class="d-flex align-items-center">
+                <p class="message-text d-inline-block">Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit.</p>
+                <span class="time d-inline-block">14:37</span>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
     </div>
 </div>
 </body>
