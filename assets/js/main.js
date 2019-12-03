@@ -31,4 +31,16 @@ $(document).ready(function () {
     recordToggle.on('click', function () {
         $(this).toggleClass('on-record');
     })
+
+    var voiceToggle = $('#voice');
+
+    voiceToggle.on('click', function () {
+        $(this).toggleClass('fa-microphone-slash');
+    })
+
+    var videoToggle = $('#video');
+
+    videoToggle.on('click', function () {
+        $(this).toggleClass('fa-video-slash');
+    })
 })

@@ -27,8 +27,8 @@
 <body>
 <!--Menu buttons-->
 <div class="menu-bottom d-flex justify-content-between fixed-bottom mb-3">
-    <!--Right menu buttons-->
-    <div class="right-menu">
+    <!--Left menu buttons-->
+    <div class="left-menu">
         <!-- Button trigger modal -->
         <button type="button" class="btn mr-4" id="chat-panel-toggle" data-toggle="tooltip" data-placement="top"
                 title="Chat">
@@ -43,6 +43,31 @@
         </button>
         <button type="button" class="btn" id="record" data-toggle="tooltip" data-placement="top" title="Record">
             <i class="fas fa-record-vinyl"></i>
+        </button>
+    </div>
+<!--    Center menu buttons-->
+    <div class="center-menu">
+        <button type="button" class="btn" data-toggle="tooltip" data-placement="top" title="Voice">
+            <i class="fas fa-microphone" id="voice"></i>
+        </button>
+        <button type="button" class="btn" data-toggle="tooltip" data-placement="top" title="Camera">
+            <i class="fas fa-video" id="video"></i>
+        </button>
+    </div>
+<!--    Right menu buttons-->
+    <div class="right-menu">
+        <button type="button" class="btn mr-4" data-toggle="tooltip" data-placement="top"
+                title="Participants">
+            <i class="fas fa-users"></i>
+            <div class="unread-message d-inline-block border rounded-circle">
+                5
+            </div>
+        </button>
+        <button type="button" class="btn" data-toggle="tooltip" data-placement="top" title="Invite">
+            <i class="fas fa-user-plus"></i>
+        </button>
+        <button type="button" class="btn" data-toggle="tooltip" data-placement="top" title="Leave Meeting">
+            <i class="fas fa-door-open"></i>
         </button>
     </div>
 </div>
@@ -143,5 +168,7 @@
         <button type="button" class="btn success px-3 ml-auto px-xl-5 mr-2">Yes</button>
     </div>
 </div>
+<!--Leave Modal-->
+
 </body>
 </html>
