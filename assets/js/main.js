@@ -25,4 +25,10 @@ $(document).ready(function () {
     screnShareModalClose.click(function(){
         screenShareModal.hide();
     });
+
+    var recordToggle = $('#record');
+
+    recordToggle.on('click', function () {
+        $(this).toggleClass('on-record');
+    })
 })

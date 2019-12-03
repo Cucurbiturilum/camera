@@ -20,7 +20,11 @@
 
         &.fa-record-vinyl {
           color: #ab2614;
-
+        }
+      }
+      &.on-record{
+        i{
+          color: #7ddf0b;
         }
       }
 
@@ -217,6 +221,9 @@
 
   p {
     font-size: 1.1rem;
+    @media (max-width: 1200px) {
+      font-size: 0.9rem;
+    }
   }
 
   .btn {
@@ -248,13 +255,5 @@
       }
     }
 
-    @media (max-width: 1200px) {
-      p {
-        font-size: 0.9rem;
-      }
-      .btn{
-
-      }
-    }
   }
 }
