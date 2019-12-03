@@ -9,9 +9,11 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="assets/css/emojionearea.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
             crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
             integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
@@ -19,26 +21,30 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
             crossorigin="anonymous"></script>
+    <script src="assets/js/emojionearea.min.js"></script>
     <script src="assets/js/main.js"></script>
 </head>
 <body>
 <!--Menu buttons-->
-<div class="menu-bottom d-flex justify-content-between fixed-bottom mb-5 mx-5">
+<div class="menu-bottom d-flex justify-content-between fixed-bottom mb-3">
     <!--Right menu buttons-->
     <div class="right-menu">
-        <!--        Chat-->
-        <div class="chat">
-            <!-- Button trigger modal -->
-            <button type="button" class="btn" id="chat-panel-toggle">
-                <i class="far fa-comments"></i>
-                <div class="unread-message d-inline-block rounded-circle">
-                    3
-                </div>
-            </button>
-        </div>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn mr-4" id="chat-panel-toggle" data-toggle="tooltip" data-placement="top" title="Chat">
+            <i class="far fa-comments"></i>
+            <div class="unread-message d-inline-block border rounded-circle">
+                10
+            </div>
+        </button>
+        <button type="button" class="btn mr-2" id="screen-share" data-toggle="tooltip" data-placement="top" title="Share Screen">
+            <i class="fas fa-cloud-upload-alt"></i>
+        </button>
+        <button type="button" class="btn" id="record" data-toggle="tooltip" data-placement="top" title="Record">
+            <i class="fas fa-record-vinyl"></i>
+        </button>
     </div>
 </div>
-<!-- Modal -->
+<!-- Chat Modal -->
 <div class="modal-content" id="chat-panel">
     <div class="modal-body">
         <div class="messages">
@@ -62,43 +68,77 @@
                 <span class="time d-inline-block">13:59</span>
             </div>
         </div>
-        <div class="my-messages d-flex justify-content-end">
+        <div class="my-messages ml-auto">
             <div class="d-flex align-items-center">
                 <span class="time d-inline-block">14:00</span>
                 <p class="message-text d-inline-block">Hi!</p>
             </div>
         </div>
         <div class="messages">
-            <p class="name">Ann</p>
+            <p class="name">Olivia</p>
             <div class="d-flex align-items-center">
-                <p class="message-text d-inline-block">Lorem ipsum dolor sit amet, consectetur
-                    adipisicing elit. Accusantium aut consequatur deleniti dolores dolorum eaque et
-                    eveniet fuga mollitia natus necessitatibus perspiciatis, quas repellat sequi
-                    velit? Dolores molestias odio sequi!</p>
-                <span class="time d-inline-block">14:28</span>
-            </div>
-        </div>
-        <div class="my-messages d-flex justify-content-end">
-            <div class="d-flex align-items-center">
-                <span class="time d-inline-block">14:32</span>
-                <p class="message-text d-inline-block">Lorem ipsum dolor sit amet, consectetur
-                    adipisicing elit. Hic odit omnis porro quasi sit! Debitis earum et ex ipsum modi
-                    necessitatibus odit, placeat qui quisquam ratione reiciendis suscipit,
-                    temporibus totam?</p>
+                <p class="message-text d-inline-block">Morning!</p>
+                <span class="time d-inline-block">13:56</span>
             </div>
         </div>
         <div class="messages">
             <p class="name">Ted</p>
             <div class="d-flex align-items-center">
-                <p class="message-text d-inline-block">Lorem ipsum dolor sit amet, consectetur
-                    adipisicing elit.</p>
-                <span class="time d-inline-block">14:37</span>
+                <p class="message-text d-inline-block">G'day!</p>
+                <span class="time d-inline-block">13:57</span>
+            </div>
+        </div>
+        <div class="messages">
+            <p class="name">Ann</p>
+            <div class="d-flex align-items-center">
+                <p class="message-text d-inline-block">Hello!</p>
+                <span class="time d-inline-block">13:59</span>
+            </div>
+        </div>
+        <div class="my-messages ml-auto">
+            <div class="d-flex align-items-center">
+                <span class="time d-inline-block">14:00</span>
+                <p class="message-text d-inline-block">Hi!</p>
+            </div>
+        </div>
+        <div class="messages">
+            <p class="name">Olivia</p>
+            <div class="d-flex align-items-center">
+                <p class="message-text d-inline-block">Morning!</p>
+                <span class="time d-inline-block">13:56</span>
+            </div>
+        </div>
+        <div class="messages">
+            <p class="name">Ted</p>
+            <div class="d-flex align-items-center">
+                <p class="message-text d-inline-block">G'day!</p>
+                <span class="time d-inline-block">13:57</span>
+            </div>
+        </div>
+        <div class="messages">
+            <p class="name">Ann</p>
+            <div class="d-flex align-items-center">
+                <p class="message-text d-inline-block">Hello!</p>
+                <span class="time d-inline-block">13:59</span>
+            </div>
+        </div>
+        <div class="my-messages ml-auto">
+            <div class="d-flex align-items-center">
+                <span class="time d-inline-block">14:00</span>
+                <p class="message-text d-inline-block">Hi!</p>
             </div>
         </div>
     </div>
     <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <div class="message-entry d-flex justify-content-between">
+            <input type="text" id="emoji">
+            <div class="upload border rounded-circle ml-2">
+                <button type="button" class="btn">
+                    <i class="far fa-images"></i>
+                </button>
+                <input type="file">
+            </div>
+        </div>
     </div>
 </div>
 </body>

@@ -7,4 +7,8 @@ $(document).ready(function () {
     chatPanelToggle.click(function () {
         chatPanel.toggle();
     })
+
+    $("#emoji").emojioneArea();
+
+    $('[data-toggle="tooltip"]').tooltip();
 })
