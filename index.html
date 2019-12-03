@@ -30,13 +30,15 @@
     <!--Right menu buttons-->
     <div class="right-menu">
         <!-- Button trigger modal -->
-        <button type="button" class="btn mr-4" id="chat-panel-toggle" data-toggle="tooltip" data-placement="top" title="Chat">
+        <button type="button" class="btn mr-4" id="chat-panel-toggle" data-toggle="tooltip" data-placement="top"
+                title="Chat">
             <i class="far fa-comments"></i>
             <div class="unread-message d-inline-block border rounded-circle">
                 10
             </div>
         </button>
-        <button type="button" class="btn mr-2" id="screen-share" data-toggle="tooltip" data-placement="top" title="Share Screen">
+        <button type="button" class="btn mr-2" id="screen-share" data-toggle="tooltip" data-placement="top"
+                title="Share Screen">
             <i class="fas fa-cloud-upload-alt"></i>
         </button>
         <button type="button" class="btn" id="record" data-toggle="tooltip" data-placement="top" title="Record">
@@ -77,55 +79,42 @@
         <div class="messages">
             <p class="name">Olivia</p>
             <div class="d-flex align-items-center">
-                <p class="message-text d-inline-block">Morning!</p>
+                <p class="message-text d-inline-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Aperiam
+                    error eum, impedit necessitatibus vero voluptates. Deleniti est explicabo omnis optio
+                    perspiciatis
+                    sed tempore totam veritatis. Dicta eveniet quidem quis tempore!</p>
                 <span class="time d-inline-block">13:56</span>
             </div>
         </div>
         <div class="messages">
             <p class="name">Ted</p>
             <div class="d-flex align-items-center">
-                <p class="message-text d-inline-block">G'day!</p>
+                <p class="message-text d-inline-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Aspernatur atque, ducimus in laudantium libero obcaecati? Asperiores assumenda, at corporis
+                    ducimus,
+                    eligendi eos est eum inventore labore officiis repellat, suscipit voluptatum.</p>
                 <span class="time d-inline-block">13:57</span>
             </div>
         </div>
         <div class="messages">
             <p class="name">Ann</p>
             <div class="d-flex align-items-center">
-                <p class="message-text d-inline-block">Hello!</p>
+                <p class="message-text d-inline-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Aliquid, amet aspernatur corporis, cum, deleniti dignissimos dolorem dolorum eius inventore
+                    labore
+                    modi nemo nesciunt officiis pariatur qui recusandae ut voluptates voluptatum.</p>
                 <span class="time d-inline-block">13:59</span>
             </div>
         </div>
         <div class="my-messages ml-auto">
             <div class="d-flex align-items-center">
                 <span class="time d-inline-block">14:00</span>
-                <p class="message-text d-inline-block">Hi!</p>
-            </div>
-        </div>
-        <div class="messages">
-            <p class="name">Olivia</p>
-            <div class="d-flex align-items-center">
-                <p class="message-text d-inline-block">Morning!</p>
-                <span class="time d-inline-block">13:56</span>
-            </div>
-        </div>
-        <div class="messages">
-            <p class="name">Ted</p>
-            <div class="d-flex align-items-center">
-                <p class="message-text d-inline-block">G'day!</p>
-                <span class="time d-inline-block">13:57</span>
-            </div>
-        </div>
-        <div class="messages">
-            <p class="name">Ann</p>
-            <div class="d-flex align-items-center">
-                <p class="message-text d-inline-block">Hello!</p>
-                <span class="time d-inline-block">13:59</span>
-            </div>
-        </div>
-        <div class="my-messages ml-auto">
-            <div class="d-flex align-items-center">
-                <span class="time d-inline-block">14:00</span>
-                <p class="message-text d-inline-block">Hi!</p>
+                <p class="message-text d-inline-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Aliquid
+                    amet asperiores beatae dignissimos earum eius eligendi eos eum libero necessitatibus neque
+                    nesciunt
+                    odio officia provident repellat repellendus, soluta ullam veniam.</p>
             </div>
         </div>
     </div>
@@ -141,5 +130,19 @@
         </div>
     </div>
 </div>
+<!--Share Screen Modal-->
+<div class="border rounded p-2" id="screen-share-modal">
+    <div class="mb-4">
+        <button type="button" id="screen-share-modal-close" class="close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <p class="text-center">Are you sure you'd like to share your screen?</p>
+    <div class="d-flex">
+        <button type="button" class="btn danger px-3 px-xl-5 ml-2">No</button>
+        <button type="button" class="btn success px-3 ml-auto px-xl-5 mr-2">Yes</button>
+    </div>
+</div>
+
 </body>
 </html>

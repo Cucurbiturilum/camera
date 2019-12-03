@@ -1,4 +1,3 @@
-
 .menu-bottom {
   .right-menu {
     background-color: $maim-color;
@@ -7,7 +6,6 @@
     position: relative;
     margin-left: 4.5rem;
     padding: 0.3rem;
-
 
     .btn {
       position: relative;
@@ -42,27 +40,32 @@
     }
   }
 }
-.tooltip{
-  .tooltip-inner{
+
+.tooltip {
+  .tooltip-inner {
     background-color: $primary-color;
     color: $main-font-color;
     border-radius: 20px;
     font-size: 0.7rem;
   }
-  .arrow{
+
+  .arrow {
     display: none;
   }
 }
 
-
+//Chat
 .modal-content {
-  width: 25%;
+  width: 45%;
   height: 100vh;
   overflow-y: auto;
   border: none;
   border-radius: 0;
   background-color: rgba(214, 214, 214, 0.7);
   padding-bottom: 5rem;
+  @media (min-width: 1200px) {
+    width: 25%;
+  }
 
   .modal-body {
     overflow-y: auto;
@@ -92,6 +95,7 @@
         color: $main-font-color;
         font-size: 0.9rem;
         width: 100%;
+
       }
 
       .time {
@@ -100,6 +104,7 @@
         margin-left: 0.5rem;
         margin-bottom: 1rem;
       }
+
     }
 
     .my-messages {
@@ -123,14 +128,18 @@
         margin-right: 0.5rem;
         margin-bottom: 1rem;
       }
+
     }
   }
 
   .modal-footer {
     position: fixed;
     bottom: 5rem;
-    width: 25%;
+    width: 45%;
     border: none;
+    @media (min-width: 1200px) {
+      width: 25%;
+    }
 
     .message-entry {
       width: 100%;
@@ -150,7 +159,7 @@
         }
 
         .emojionearea-button {
-          right: 88%;
+          left: 3%;
           top: 15%;
         }
 
@@ -193,6 +202,58 @@
           top: 0;
           opacity: 0;
         }
+      }
+    }
+  }
+}
+
+//Screem Share
+#screen-share-modal {
+  position: absolute;
+  bottom: 15%;
+  left: 3%;
+  width: 25%;
+  background-color: rgba(255, 255, 255, 0.7);
+
+  p {
+    font-size: 1.1rem;
+  }
+
+  .btn {
+    font-weight: 500;
+    font-size: 1.3rem;
+    line-height: 1.2;
+
+    &:focus {
+      box-shadow: none;
+    }
+
+    &.success {
+      border: 1.5px solid $primary-color;
+      color: $primary-color;
+
+      &:hover {
+        background-color: $primary-color;
+        color: $main-font-color;
+      }
+    }
+
+    &.danger {
+      border: 1.5px solid $secondary-color;
+      color: $secondary-color;
+
+      &:hover {
+        background-color: $secondary-color;
+        color: $main-font-color;
+      }
+    }
+
+    @media (max-width: 1200px) {
+      p {
+        font-size: 0.9rem;
+      }
+      .btn{
+
       }
     }
   }
