@@ -2,10 +2,12 @@ $(document).ready(function () {
     // Chat
     var chatPanelToggle = $('#chat-panel-toggle');
     var chatPanel = $('#chat-panel');
+    var rightGroupModal = $('.right-group-modal');
 
-    chatPanel.hide();
+        chatPanel.hide();
 
     chatPanelToggle.click(function () {
+        rightGroupModal.hide();
         chatPanel.toggle();
     })
 
@@ -23,15 +25,17 @@ $(document).ready(function () {
     var screenShareModal = $('#screen-share-modal');
     var screenShareModalClose = $('#screen-share-modal-close');
 
+    rightGroupModal.hide();
+
     screenShareModal.hide();
 
     screenShare.click(function () {
-            screenShareModal.toggle();
-        });
+        screenShareModal.toggle();
+    });
 
-    screenShareModalClose.click(function(){
-            screenShareModal.hide();
-        });
+    screenShareModalClose.click(function () {
+        screenShareModal.hide();
+    });
 
     // Record
 
@@ -69,7 +73,7 @@ $(document).ready(function () {
         leaveMeetingModal.toggle();
     });
 
-    leaveMeetingModalClose.click(function(){
+    leaveMeetingModalClose.click(function () {
         leaveMeetingModal.hide();
     });
 
@@ -85,7 +89,7 @@ $(document).ready(function () {
         inviteModal.toggle();
     });
 
-    inviteModalClose.click(function(){
+    inviteModalClose.click(function () {
         inviteModal.hide();
     });
 
@@ -93,10 +97,12 @@ $(document).ready(function () {
 
     var participantsToggle = $('#participants-toggle');
     var participantsModal = $('#participants-panel');
+    var leftGroupModal = $('.left-group-modal');
 
     participantsModal.hide();
-    
-    participantsToggle.click(function () {
+
+     participantsToggle.click(function () {
+         leftGroupModal.hide();
         participantsModal.toggle();
     });
 
