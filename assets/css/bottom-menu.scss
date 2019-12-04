@@ -1,5 +1,7 @@
 .menu-bottom {
-  .right-menu,.center-menu, .left-menu {
+  flex-wrap: nowrap;
+
+  .right-menu, .center-menu, .left-menu {
     background-color: $maim-color;
     box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.75);
     border-radius: 20px;
@@ -21,8 +23,9 @@
           color: #ab2614;
         }
       }
-      &.on-record{
-        i{
+
+      &.on-record {
+        i {
           color: #7ddf0b;
         }
       }
@@ -42,10 +45,12 @@
       }
     }
   }
-  .left-menu{
+
+  .left-menu {
     margin-left: 4.5rem;
   }
-  .right-menu{
+
+  .right-menu {
     margin-right: 4.5rem;
   }
 }
@@ -216,11 +221,10 @@
   }
 }
 
-//Screem Share
-#screen-share-modal {
+//Screem Share, Leave Meeting
+#screen-share-modal, #leave-modal {
   position: absolute;
   bottom: 15%;
-  left: 3%;
   width: 25%;
   background-color: rgba(255, 255, 255, 0.7);
 
@@ -261,4 +265,12 @@
     }
 
   }
+}
+
+#screen-share-modal {
+  left: 3%;
+}
+
+#leave-modal {
+  right: 3%;
 }

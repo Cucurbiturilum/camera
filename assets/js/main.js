@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    // Chat
     var chatPanelToggle = $('#chat-panel-toggle');
     var chatPanel = $('#chat-panel');
 
@@ -8,23 +9,31 @@ $(document).ready(function () {
         chatPanel.toggle();
     })
 
+    // Emoji
+
     $("#emoji").emojioneArea();
+
+    // Tooltips
 
     $('[data-toggle="tooltip"]').tooltip();
 
-    var screenShare = $('#screen-share')
+    // Screen Share
+
+    var screenShare = $('#screen-share');
     var screenShareModal = $('#screen-share-modal');
-    var screnShareModalClose = $('#screen-share-modal-close');
+    var screenShareModalClose = $('#screen-share-modal-close');
 
     screenShareModal.hide();
 
     screenShare.click(function () {
-        screenShareModal.toggle();
-    })
+            screenShareModal.toggle();
+        });
 
-    screnShareModalClose.click(function(){
-        screenShareModal.hide();
-    });
+    screenShareModalClose.click(function(){
+            screenShareModal.hide();
+        });
+
+    // Record
 
     var recordToggle = $('#record');
 
@@ -32,15 +41,35 @@ $(document).ready(function () {
         $(this).toggleClass('on-record');
     })
 
+    // Microphone
+
     var voiceToggle = $('#voice');
 
     voiceToggle.on('click', function () {
         $(this).toggleClass('fa-microphone-slash');
     })
 
+    // Camera
+
     var videoToggle = $('#video');
 
     videoToggle.on('click', function () {
         $(this).toggleClass('fa-video-slash');
     })
+
+    // Leave Meeting
+
+    var leaveMeetingToggle = $('#leave-toggle');
+    var leaveMeetingModal = $('#leave-modal');
+    var leaveMeetingModalClose = $('#leave-close');
+
+    leaveMeetingModal.hide();
+
+    leaveMeetingToggle.click(function () {
+        leaveMeetingModal.toggle();
+    });
+
+    leaveMeetingModalClose.click(function(){
+        leaveMeetingModal.hide();
+    });
 })

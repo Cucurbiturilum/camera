@@ -63,10 +63,10 @@
                 5
             </div>
         </button>
-        <button type="button" class="btn" data-toggle="tooltip" data-placement="top" title="Invite">
+        <button type="button" class="btn" id="invite-toggle" data-toggle="tooltip" data-placement="top" title="Invite">
             <i class="fas fa-user-plus"></i>
         </button>
-        <button type="button" class="btn" data-toggle="tooltip" data-placement="top" title="Leave Meeting">
+        <button type="button" class="btn" id="leave-toggle" data-toggle="tooltip" data-placement="top" title="Leave Meeting">
             <i class="fas fa-door-open"></i>
         </button>
     </div>
@@ -169,6 +169,26 @@
     </div>
 </div>
 <!--Leave Modal-->
-
+<div class="border rounded p-2" id="leave-modal">
+    <div class="mb-4">
+        <button type="button" id="leave-close" class="close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <p class="text-center">Are you sure you'd like to leave?</p>
+    <div class="d-flex">
+        <button type="button" class="btn danger px-3 px-xl-5 ml-2">No</button>
+        <button type="button" class="btn success px-3 ml-auto px-xl-5 mr-2">Yes</button>
+    </div>
+</div>
+<!--Invite-->
+<div class="border rounded p-2" id="invite-modal">
+    <div class="mb-4">
+        <button type="button" id="invite-close" class="close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <p></p>
+    </div>
+</div>
 </body>
 </html>
