@@ -72,4 +72,32 @@ $(document).ready(function () {
     leaveMeetingModalClose.click(function(){
         leaveMeetingModal.hide();
     });
+
+    // Invite
+
+    var inviteToggle = $('#invite-toggle');
+    var inviteModal = $('#invite-modal');
+    var inviteModalClose = $('#invite-close');
+
+    inviteModal.hide();
+
+    inviteToggle.click(function () {
+        inviteModal.toggle();
+    });
+
+    inviteModalClose.click(function(){
+        inviteModal.hide();
+    });
+
+    // Participants
+
+    var participantsToggle = $('#participants-toggle');
+    var participantsModal = $('#participants-panel');
+
+    participantsModal.hide();
+    
+    participantsToggle.click(function () {
+        participantsModal.toggle();
+    });
+
 })

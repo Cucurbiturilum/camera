@@ -222,7 +222,7 @@
 }
 
 //Screem Share, Leave Meeting
-#screen-share-modal, #leave-modal {
+#screen-share-modal, #leave-modal, #invite-modal {
   position: absolute;
   bottom: 15%;
   width: 25%;
@@ -273,4 +273,36 @@
 
 #leave-modal {
   right: 3%;
+}
+
+#invite-modal {
+  width: 10%;
+  right: 7%;
+
+  .invite-icons {
+    width: 20%;
+    margin-right: 0.5rem;
+  }
+
+  .leave-link {
+    color: $secondary-color;
+  }
+}
+
+.participants-content{
+  position: absolute;
+  right: 0;
+  width: 45%;
+  height: 100vh;
+  overflow-y: auto;
+  border: none;
+  border-radius: 0;
+  background-color: rgba(214, 214, 214, 0.7);
+  padding: 1.25rem;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  @media (min-width: 1200px) {
+    width: 25%;
+  }
 }

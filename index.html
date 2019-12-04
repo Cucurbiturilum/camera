@@ -45,7 +45,7 @@
             <i class="fas fa-record-vinyl"></i>
         </button>
     </div>
-<!--    Center menu buttons-->
+    <!--    Center menu buttons-->
     <div class="center-menu">
         <button type="button" class="btn" data-toggle="tooltip" data-placement="top" title="Voice">
             <i class="fas fa-microphone" id="voice"></i>
@@ -54,9 +54,9 @@
             <i class="fas fa-video" id="video"></i>
         </button>
     </div>
-<!--    Right menu buttons-->
+    <!--    Right menu buttons-->
     <div class="right-menu">
-        <button type="button" class="btn mr-4" data-toggle="tooltip" data-placement="top"
+        <button type="button" class="btn mr-4" id="participants-toggle" data-toggle="tooltip" data-placement="top"
                 title="Participants">
             <i class="fas fa-users"></i>
             <div class="unread-message d-inline-block border rounded-circle">
@@ -66,7 +66,8 @@
         <button type="button" class="btn" id="invite-toggle" data-toggle="tooltip" data-placement="top" title="Invite">
             <i class="fas fa-user-plus"></i>
         </button>
-        <button type="button" class="btn" id="leave-toggle" data-toggle="tooltip" data-placement="top" title="Leave Meeting">
+        <button type="button" class="btn" id="leave-toggle" data-toggle="tooltip" data-placement="top"
+                title="Leave Meeting">
             <i class="fas fa-door-open"></i>
         </button>
     </div>
@@ -183,12 +184,31 @@
 </div>
 <!--Invite-->
 <div class="border rounded p-2" id="invite-modal">
-    <div class="mb-4">
+    <div class="mb-3">
         <button type="button" id="invite-close" class="close">
             <span aria-hidden="true">&times;</span>
         </button>
-        <p></p>
     </div>
+    <p>
+        <span><img src="assets/images/gmail.svg" alt="gmail" class="invite-icons"></span>
+        <a href="#" class="leave-link text-decoration-none">Gmail</a>
+    </p>
+    <p>
+        <span><img src="assets/images/email.svg" alt="email" class="invite-icons"></span>
+        <a href="#" class="leave-link text-decoration-none">Email</a>
+    </p>
+    <p>
+        <span><img src="assets/images/email%20(1).svg" alt="message" class="invite-icons"></span>
+        <a href="#" class="leave-link text-decoration-none">Message</a>
+    </p>
+    <p class="mb-0">
+        <span><img src="assets/images/copy%20(1).svg" alt="copy" class="invite-icons"></span>
+        <a href="#" class="leave-link text-decoration-none">Copy Link</a>
+    </p>
+</div>
+<!--Participants-->
+<div class="participants-content" id="participants-panel">
+
 </div>
 </body>
 </html>
