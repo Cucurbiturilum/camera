@@ -1,0 +1,35 @@
+.menu-bottom{
+  .left-menu{
+    form{
+      width: 35rem;
+      .form-group{
+        width: 80%;
+        margin-right: 1.5rem;
+        .form-control{
+          border-radius: 20px;
+          background-color: rgba(174, 174, 174, 0.7);
+          border-color: rgba(174, 174, 174, 0.7);
+          padding-left: 1.3rem;
+          color: $main-font-color;
+          &:focus{
+            box-shadow: none;
+          }
+          &::placeholder{
+            color: $main-font-color;
+          }
+        }
+      }
+      .btn{
+        color: $main-font-color;
+        font-weight: 500;
+        border-radius: 20px;
+        border: 1px solid $main-font-color;
+        padding: 0.25rem 1.2rem;
+        &:hover{
+          background-color: $main-font-color;
+          color: $maim-color;
+        }
+      }
+    }
+  }
+}

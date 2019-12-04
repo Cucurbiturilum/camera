@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Webinar Student</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="assets/css/emojionearea.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+    <script src="assets/js/emojionearea.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</head>
+<body>
+<!--Menu buttons-->
+<div class="menu-bottom d-flex justify-content-between fixed-bottom mb-3">
+    <!--Left menu buttons-->
+    <div class="left-menu d-flex">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn mr-4" id="chat-panel-toggle" data-toggle="tooltip" data-placement="top"
+                title="Chat">
+            <i class="far fa-comments"></i>
+            <div class="unread-message d-inline-block border rounded-circle">
+                10
+            </div>
+        </button>
+        <form class="d-flex align-items-center">
+            <div class="form-group d-inline-block mb-0">
+                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Ask a question...">
+            </div>
+            <button type="submit" class="btn">Send</button>
+        </form>
+    </div>
+    <!--    Right menu buttons-->
+    <div class="right-menu">
+        <button type="button" class="btn" id="leave-toggle" data-toggle="tooltip" data-placement="top"
+                title="Leave Meeting">
+            <i class="fas fa-door-open"></i>
+        </button>
+    </div>
+</div>
+<!--Main Screen-->
+<div class="container-fluid">
+    <div class="main-screen row">
+        <div class="col-6 p-0 d-flex align-items-center vh-100">
+            <div class="px-2">
+                <img src="assets/images/screenshot-fontawesome.com-2019.12.png" alt="screenshot" class="img-fluid">
+            </div>
+        </div>
+        <div class="col-6 border-left p-0 d-flex align-items-center vh-100">
+            <div class="px-2">
+                <img src="assets/images/adult-african-american-afro-black-female-1181519.jpg" alt="female" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Chat Modal -->
+<div class="modal-content left-group-modal" id="chat-panel">
+    <div class="modal-body mb-0">
+        <div class="messages">
+            <p class="name">Olivia</p>
+            <div class="d-flex align-items-center">
+                <p class="message-text d-inline-block">Morning!</p>
+                <span class="time d-inline-block">13:56</span>
+            </div>
+        </div>
+        <div class="messages">
+            <p class="name">Ted</p>
+            <div class="d-flex align-items-center">
+                <p class="message-text d-inline-block">G'day!</p>
+                <span class="time d-inline-block">13:57</span>
+            </div>
+        </div>
+        <div class="messages">
+            <p class="name">Ann</p>
+            <div class="d-flex align-items-center">
+                <p class="message-text d-inline-block">Hello!</p>
+                <span class="time d-inline-block">13:59</span>
+            </div>
+        </div>
+        <div class="my-messages ml-auto">
+            <div class="d-flex align-items-center">
+                <span class="time d-inline-block">14:00</span>
+                <p class="message-text d-inline-block">Hi!</p>
+            </div>
+        </div>
+        <div class="messages">
+            <p class="name">Olivia</p>
+            <div class="d-flex align-items-center">
+                <p class="message-text d-inline-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Aperiam
+                    error eum, impedit necessitatibus vero voluptates. Deleniti est explicabo omnis optio
+                    perspiciatis
+                    sed tempore totam veritatis. Dicta eveniet quidem quis tempore!</p>
+                <span class="time d-inline-block">13:56</span>
+            </div>
+        </div>
+        <div class="messages">
+            <p class="name">Ted</p>
+            <div class="d-flex align-items-center">
+                <p class="message-text d-inline-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Aspernatur atque, ducimus in laudantium libero obcaecati? Asperiores assumenda, at corporis
+                    ducimus,
+                    eligendi eos est eum inventore labore officiis repellat, suscipit voluptatum.</p>
+                <span class="time d-inline-block">13:57</span>
+            </div>
+        </div>
+        <div class="messages">
+            <p class="name">Ann</p>
+            <div class="d-flex align-items-center">
+                <p class="message-text d-inline-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Aliquid, amet aspernatur corporis, cum, deleniti dignissimos dolorem dolorum eius inventore
+                    labore
+                    modi nemo nesciunt officiis pariatur qui recusandae ut voluptates voluptatum.</p>
+                <span class="time d-inline-block">13:59</span>
+            </div>
+        </div>
+        <div class="my-messages ml-auto">
+            <div class="d-flex align-items-center">
+                <span class="time d-inline-block">14:00</span>
+                <p class="message-text d-inline-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Aliquid
+                    amet asperiores beatae dignissimos earum eius eligendi eos eum libero necessitatibus neque
+                    nesciunt
+                    odio officia provident repellat repellendus, soluta ullam veniam.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Leave Modal-->
+<div class="border rounded p-2" id="leave-modal">
+    <div class="mb-4">
+        <button type="button" id="leave-close" class="close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <p class="text-center">Are you sure you'd like to leave?</p>
+    <div class="d-flex">
+        <button type="button" class="btn danger px-3 px-xl-5 ml-2">No</button>
+        <button type="button" class="btn success px-3 ml-auto px-xl-5 mr-2">Yes</button>
+    </div>
+</div>
+</body>
+</html>
