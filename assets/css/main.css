@@ -18,6 +18,7 @@
 
 .participants-content {
   position: absolute;
+  top: 0;
   right: 0;
   width: 45%;
   height: 100vh;
@@ -357,6 +358,31 @@
 }
 .main-screen .resize.btn:focus {
   box-shadow: none;
+}
+.main-screen .resize:hover {
+  background-color: #17c6ac;
+}
+
+.participants-content {
+  width: 17%;
+  bottom: 15%;
+  right: 3%;
+  top: auto;
+  height: auto;
+}
+.participants-content .participant-user {
+  margin-bottom: 1.25rem;
+}
+.participants-content .participant-user .participant-date {
+  color: #9c29b7;
+  font-size: 1.1rem;
+}
+.participants-content .participant-user .participant-date .user-icon {
+  font-size: 0.9rem;
+  padding: 0.4rem;
+  color: #fff;
+  background-color: #9c29b7;
+  margin-right: 1.1rem;
 }
 
 /*# sourceMappingURL=main.css.map */

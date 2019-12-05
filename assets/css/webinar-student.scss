@@ -54,5 +54,8 @@
     &.btn:focus {
       box-shadow: none;
     }
+    &:hover{
+      background-color: $primary-color;
+    }
   }
 }

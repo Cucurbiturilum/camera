@@ -1,0 +1,21 @@
+.participants-content{
+  width: 17%;
+  bottom: 15%;
+  right: 3%;
+  top: auto;
+  height: auto;
+  .participant-user{
+    margin-bottom: 1.25rem;
+    .participant-date{
+      color: $secondary-color;
+      font-size: 1.1rem;
+      .user-icon{
+        font-size: 0.9rem;
+        padding: 0.4rem;
+        color: $main-font-color;
+        background-color: $secondary-color;
+        margin-right: 1.1rem;
+      }
+    }
+  }
+}
