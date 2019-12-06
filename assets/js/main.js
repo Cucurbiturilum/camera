@@ -107,3 +107,27 @@ $(document).ready(function () {
     });
 
 })
+
+// Mic indication
+let mic;
+
+function setup() {
+
+    // Create an Audio input
+    mic = new p5.AudioIn();
+
+    // Start the audio context on a click/touch event
+    userStartAudio().then(function() {
+        mic.start();
+    });
+}
+
+function draw() {
+
+    // Get the overall volume (between 0 and 1.0)
+    let vol = mic.getLevel() * 300;
+
+    $('#mic-volume')
+        .css('width', vol+'%')
+        .attr('aria-valuenow', vol);
+}

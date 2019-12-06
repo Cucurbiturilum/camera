@@ -22,6 +22,8 @@
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
             crossorigin="anonymous"></script>
     <script src="assets/js/emojionearea.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@0.10.2/lib/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/addons/p5.sound.min.js"></script>
     <script src="assets/js/main.js"></script>
 </head>
 <body>
@@ -65,12 +67,15 @@
         </button>
     </div>
     <!--    Center menu buttons-->
-    <div class="center-menu">
-        <button type="button" class="btn" data-toggle="tooltip" data-placement="top" title="Voice">
-            <i class="fas fa-microphone" id="voice"></i>
+    <div class="center-menu d-flex justify-content-between align-items-center">
+        <button id="mic-toggle" type="button" class="btn" data-toggle="tooltip" data-placement="top" title="Voice">
+            <i class="fas fa-microphone fa-microphone-slash" id="voice"></i>
         </button>
+        <div class="progress">
+            <div id="mic-volume" class="progress-bar bg-success" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
         <button type="button" class="btn" data-toggle="tooltip" data-placement="top" title="Camera">
-            <i class="fas fa-video" id="video"></i>
+            <i class="fas fa-video fa-video-slash" id="video"></i>
         </button>
     </div>
     <!--    Right menu buttons-->
