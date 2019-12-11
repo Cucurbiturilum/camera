@@ -34,11 +34,6 @@
   &::-webkit-scrollbar {
     display: none;
   }
-
-  @media (min-width: 1200px) {
-    width: 25%;
-  }
-
   .player {
     background-color: #fff;
     border-radius: 5px;
@@ -51,9 +46,11 @@
       background-color: $button-background-color;
       color: $main-font-color;
       text-align: center;
-      .btn:focus{
+
+      .btn:focus {
         box-shadow: none;
       }
+
       .resize {
         border: none;
       }
@@ -69,4 +66,9 @@
       }
     }
   }
+
+  @media (min-width: 1200px) {
+    width: 25%;
+  }
 }
+

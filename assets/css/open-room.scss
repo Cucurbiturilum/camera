@@ -1,0 +1,47 @@
+.player {
+  background-color: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+
+  .user-name {
+    top: 0;
+    left: 0;
+    width: 25%;
+    background-color: $button-background-color;
+    color: $main-font-color;
+    text-align: center;
+
+    .btn:focus {
+      box-shadow: none;
+    }
+
+    .resize {
+      border: none;
+    }
+  }
+
+  .user-avatar {
+    width: 150px;
+    height: 150px;
+
+    img {
+      width: 60%;
+      padding-top: 1.1rem;;
+    }
+  }
+}
+.resize {
+  background-color: $button-background-color;
+  border-radius: 0;
+  border-top-left-radius: 5px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  &.btn:focus {
+    box-shadow: none;
+  }
+  &:hover{
+    background-color: $primary-color;
+  }
+}

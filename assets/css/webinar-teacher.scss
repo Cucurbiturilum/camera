@@ -5,13 +5,17 @@
   top: auto;
   height: auto;
   .participant-user{
-    margin-bottom: 1.25rem;
+    margin-bottom: 1rem;
     .participant-date{
       color: $secondary-color;
       font-size: 1.1rem;
       .user-icon{
+        display: inline-block;
+        text-align: center;
+        width: 2rem;
+        height: 2rem;
+        padding-top: 0.35rem;
         font-size: 0.9rem;
-        padding: 0.4rem;
         color: $main-font-color;
         background-color: $secondary-color;
         margin-right: 1.1rem;
