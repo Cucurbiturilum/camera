@@ -2,12 +2,10 @@ $(document).ready(function () {
     // Chat
     var chatPanelToggle = $('#chat-panel-toggle');
     var chatPanel = $('#chat-panel');
-    var rightGroupModal = $('.right-group-modal');
 
         chatPanel.hide();
 
     chatPanelToggle.click(function () {
-        rightGroupModal.hide();
         chatPanel.toggle();
     })
 
@@ -25,7 +23,7 @@ $(document).ready(function () {
     var screenShareModal = $('#screen-share-modal');
     var screenShareModalClose = $('#screen-share-modal-close');
 
-    rightGroupModal.hide();
+    //rightGroupModal.hide();
 
     screenShareModal.hide();
 
@@ -99,11 +97,11 @@ $(document).ready(function () {
     var participantsModal = $('#participants-panel');
     var leftGroupModal = $('.left-group-modal');
 
-    participantsModal.hide();
+    participantsModal.addClass('vs-hidden');
 
      participantsToggle.click(function () {
-         leftGroupModal.hide();
-        participantsModal.toggle();
+        leftGroupModal.hide();
+        participantsModal.toggleClass('vs-hidden');
     });
 
 })

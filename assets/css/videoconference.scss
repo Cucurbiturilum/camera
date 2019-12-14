@@ -1,51 +1,44 @@
 .full-screen-player {
   .user-avatar {
-    width: 200px;
-    height: 200px;
-    top: calc(50% - 100px);
-    left: calc(50% - 100px);
+    @include user-avatar;
+    top: calc(50% - 75px);
+    left: calc(50% - 75px);
   }
 
   .user-name {
-    left: 44%;
+    @include user-name;
+    left: calc(50% - 7.5%);
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
-    background-color: $button-background-color;
-    text-align: center;
-    color: $main-font-color;
-    width: 12%;
+    min-width: 15%;
     padding: 0.25rem 0;
     font-size: 1.2rem;
   }
 }
 
-.participants-content {
-  position: absolute;
+
+.participants-content-main {
+  @include participants;
   top: 0;
   right: 0;
   width: 45%;
   height: 100vh;
   overflow-y: auto;
-  border: none;
-  border-radius: 0;
-  background-color: rgba(214, 214, 214, 0.7);
-  padding: 1.25rem;
 
-  &::-webkit-scrollbar {
-    display: none;
-  }
   .player {
     background-color: #fff;
     border-radius: 5px;
     overflow: hidden;
 
     .user-name {
+      @include user-name;
       top: 0;
       left: 0;
-      width: 25%;
-      background-color: $button-background-color;
-      color: $main-font-color;
-      text-align: center;
+      min-width: 25%;
+
+      &:hover {
+        background-color: $primary-color;
+      }
 
       .btn:focus {
         box-shadow: none;
@@ -53,16 +46,18 @@
 
       .resize {
         border: none;
+        background-color: transparent;
       }
     }
 
     .user-avatar {
-      width: 150px;
-      height: 150px;
-
-      img {
-        width: 60%;
-        padding-top: 1.1rem;;
+      @include user-avatar;
+    }
+    &.fullscreen {
+      z-index: -10;
+      visibility: visible;
+      .resize {
+        background-color: transparent;
       }
     }
   }

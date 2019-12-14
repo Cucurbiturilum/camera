@@ -43,19 +43,26 @@
 .main-screen {
   z-index: 0;
 
-  .resize {
-    background-color: $button-background-color;
-    border-radius: 0;
-    border-top-left-radius: 5px;
-    position: absolute;
-    bottom: 0;
-    right: 0.5rem;
-
-    &.btn:focus {
-      box-shadow: none;
+  .player {
+    position: relative;
+    &.fullscreen{
+      @include fullscreen;
     }
-    &:hover{
-      background-color: $primary-color;
+    &.small-screen {
+      position: absolute;
+      z-index: 1000;
+      top: 2rem;
+      right: 2rem;
+      width: 40%;
+      &.left{
+        left: 2rem;
+      }
+      .resize{
+        background-color: $button-background-color;
+        &:hover{
+          background-color: $primary-color;
+        }
+      }
     }
   }
 }

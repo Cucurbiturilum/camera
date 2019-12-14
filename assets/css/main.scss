@@ -5,5 +5,97 @@ $button-background-color: rgba(156, 41, 183, 0.8);
 $main-font-color: #fff;
 $font-color: #606060;
 
+@mixin resize{
+  background-color: $button-background-color;
+  border-radius: 0;
+  border-top-left-radius: 5px;
+  position: absolute;
+  bottom: 0;
+  width: 25px;
+  height: 25px;
+  img{
+    width: 20px;
+    height: 20px;
+    margin-right: -4px;
+  }
+
+  &.btn:focus {
+    box-shadow: none;
+  }
+  &:hover{
+    background-color: $primary-color;
+  }
+}
+@mixin user-name{
+  background-color: $button-background-color;
+  text-align: center;
+  color: $main-font-color;
+}
+@mixin user-avatar{
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+
+  img {
+    width: auto;
+    height: 100%;
+    margin-left: -25%;
+  }
+}
+@mixin participants {
+  position: absolute;
+  border: none;
+  border-radius: 0;
+  background-color: rgba(214, 214, 214, 0.7);
+  padding: 1.25rem;
+  @media (min-width: 1200px) {
+    width: 25%;
+  }
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+.vs-hidden{
+  visibility: hidden;
+}
+@mixin fullscreen {
+  border-radius: 0;
+  width: 100vw !important;
+  height: 100vh !important;
+  z-index: 100;
+  position: fixed !important;
+  top: 0;
+  left: 0;
+
+  .user-name {
+    min-width: 10%;
+    left: 45%;
+    font-size: 1.2rem;
+    line-height: 2;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+    &:hover {
+      background-color: $primary-color;
+    }
+
+    .top-resize {
+      display: inline-block;
+      background-color: transparent;
+    }
+  }
+
+  .resize {
+    &.bottom-resize{
+      display: none;
+    }
+  }
+
+  .user-avatar {
+    position: absolute;
+    top: calc(50% - 75px);
+    left: calc(50% - 75px);
+  }
+}
 @import "videoconference", "bottom-menu","webinar-student","webinar-teacher", "open-room";
 
