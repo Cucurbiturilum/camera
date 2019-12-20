@@ -281,42 +281,43 @@
   opacity: 0;
 }
 
-#screen-share-modal, #leave-modal, #invite-modal {
+#screen-share-modal, #leave-modal, #invite-modal, #start-modal, #presentation-modal {
   position: absolute;
   bottom: 15%;
-  width: 25%;
+  width: auto;
   background-color: rgba(255, 255, 255, 0.9);
   z-index: 2;
 }
-#screen-share-modal p, #leave-modal p, #invite-modal p {
+#screen-share-modal p, #leave-modal p, #invite-modal p, #start-modal p, #presentation-modal p {
   font-size: 1.1rem;
 }
 @media (max-width: 1200px) {
-  #screen-share-modal p, #leave-modal p, #invite-modal p {
+  #screen-share-modal p, #leave-modal p, #invite-modal p, #start-modal p, #presentation-modal p {
     font-size: 0.9rem;
   }
 }
-#screen-share-modal .btn, #leave-modal .btn, #invite-modal .btn {
+#screen-share-modal .btn, #leave-modal .btn, #invite-modal .btn, #start-modal .btn, #presentation-modal .btn {
   font-weight: 500;
   font-size: 1.3rem;
   line-height: 1.2;
 }
-#screen-share-modal .btn:focus, #leave-modal .btn:focus, #invite-modal .btn:focus {
+#screen-share-modal .btn:focus, #leave-modal .btn:focus, #invite-modal .btn:focus, #start-modal .btn:focus, #presentation-modal .btn:focus {
   box-shadow: none;
 }
-#screen-share-modal .btn.success, #leave-modal .btn.success, #invite-modal .btn.success {
+#screen-share-modal .btn.success, #leave-modal .btn.success, #invite-modal .btn.success, #start-modal .btn.success, #presentation-modal .btn.success {
   border: 1.5px solid #17c6ac;
   color: #17c6ac;
 }
-#screen-share-modal .btn.success:hover, #leave-modal .btn.success:hover, #invite-modal .btn.success:hover {
+#screen-share-modal .btn.success:hover, #leave-modal .btn.success:hover, #invite-modal .btn.success:hover, #start-modal .btn.success:hover, #presentation-modal .btn.success:hover {
   background-color: #17c6ac;
   color: #fff;
 }
-#screen-share-modal .btn.danger, #leave-modal .btn.danger, #invite-modal .btn.danger {
+#screen-share-modal .btn.danger, #leave-modal .btn.danger, #invite-modal .btn.danger, #start-modal .btn.danger, #presentation-modal .btn.danger {
   border: 1.5px solid #9c29b7;
   color: #9c29b7;
+  margin-right: 2rem;
 }
-#screen-share-modal .btn.danger:hover, #leave-modal .btn.danger:hover, #invite-modal .btn.danger:hover {
+#screen-share-modal .btn.danger:hover, #leave-modal .btn.danger:hover, #invite-modal .btn.danger:hover, #start-modal .btn.danger:hover, #presentation-modal .btn.danger:hover {
   background-color: #9c29b7;
   color: #fff;
 }
@@ -339,6 +340,21 @@
 }
 #invite-modal .leave-link {
   color: #9c29b7;
+}
+
+#start-modal {
+  left: 5%;
+}
+@media (max-width: 1200px) {
+  #start-modal {
+    left: 13%;
+  }
+}
+
+#presentation-modal {
+  width: 40%;
+  left: 5%;
+  bottom: 20%;
 }
 
 .menu-bottom .left-menu form {
@@ -560,6 +576,154 @@
   position: absolute;
   top: calc(50% - 75px);
   left: calc(50% - 75px);
+}
+
+body {
+  background-image: url(../images/computer-desk-electronics-keyboard-238118.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body #presentation-modal {
+  min-height: 25rem;
+  background-color: #fff;
+}
+body #presentation-modal .add-file {
+  min-height: 23rem;
+}
+body #presentation-modal .add-file .presentation-modal-head .presentation-modal-head-title {
+  width: 30%;
+  color: #9c29b7;
+  font-size: 1.2rem;
+  margin-right: 0.5rem;
+}
+@media (min-width: 1200px) {
+  body #presentation-modal .add-file .presentation-modal-head .presentation-modal-head-title {
+    width: 50%;
+    font-size: 2rem;
+  }
+}
+body #presentation-modal .add-file .presentation-modal-head .presentation-modal-head-title i {
+  color: #17c6ac;
+  font-size: 2.3rem;
+}
+body #presentation-modal .add-file .presentation-modal-head form {
+  width: 70%;
+}
+@media (min-width: 1200px) {
+  body #presentation-modal .add-file .presentation-modal-head form {
+    width: 50%;
+  }
+}
+body #presentation-modal .add-file .presentation-modal-head form .form-group .form-control {
+  width: 83%;
+}
+body #presentation-modal .add-file .presentation-modal-head form .form-group .form-control:focus {
+  box-shadow: none;
+}
+body #presentation-modal .add-file .presentation-modal-head form .form-group .search-btn {
+  width: 15%;
+  text-align: right;
+  background-color: transparent;
+}
+body #presentation-modal .add-file .presentation-modal-head form .form-group .search-btn i {
+  color: #606060;
+  font-size: 1rem;
+}
+body #presentation-modal .add-file .presentation-modal-body {
+  height: 17rem;
+  margin-bottom: 1rem;
+  overflow-y: auto;
+}
+body #presentation-modal .add-file .presentation-modal-body::-webkit-scrollbar {
+  display: none;
+}
+body #presentation-modal .add-file .presentation-modal-body .preview {
+  text-align: center;
+  margin-top: 2rem;
+}
+body #presentation-modal .add-file .presentation-modal-body .preview p {
+  color: #606060;
+  font-size: 1.2rem;
+}
+body #presentation-modal .add-file .presentation-modal-body .preview img {
+  width: 20%;
+}
+body #presentation-modal .add-file .presentation-modal-body .preview-presentation {
+  height: 120px;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 1200px) {
+  body #presentation-modal .add-file .presentation-modal-body .preview-presentation {
+    height: 90px;
+  }
+}
+body #presentation-modal .add-file .presentation-modal-body .preview-presentation .jpreview-image {
+  width: 150px;
+  height: 100px;
+  margin: 10px;
+  position: relative;
+  float: left;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+@media (max-width: 1200px) {
+  body #presentation-modal .add-file .presentation-modal-body .preview-presentation .jpreview-image {
+    width: 125px;
+    height: 75px;
+    margin: 7px;
+  }
+}
+body #presentation-modal .add-file .presentation-modal-body .preview-presentation .jpreview-image img {
+  max-width: 100%;
+  max-height: 100%;
+}
+body #presentation-modal .add-file .presentation-modal-body .preview-presentation .jpreview-image:after {
+  content: ".";
+  visibility: hidden;
+  display: block;
+  clear: both;
+}
+body #presentation-modal .add-file .presentation-modal-body .preview-presentation .preview-name {
+  color: #9c29b7;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+body #presentation-modal .add-file .presentation-modal-body .preview-presentation .preview-status {
+  color: #00acf9;
+  border-right: 1px solid #bcbcbc;
+  padding-right: 0.4rem;
+}
+body #presentation-modal .add-file .presentation-modal-body .preview-presentation .preview-size, body #presentation-modal .add-file .presentation-modal-body .preview-presentation .preview-type {
+  color: #bcbcbc;
+  padding-right: 0.4rem;
+}
+body #presentation-modal .add-file .presentation-modal-body .preview-presentation .preview-type {
+  border-right: 1px solid #bcbcbc;
+  color: #bcbcbc;
+  text-transform: uppercase;
+}
+body #presentation-modal .add-file .presentation-modal-body .preview-presentation .control-buttons {
+  margin-left: auto;
+}
+body #presentation-modal .add-file .presentation-modal-body .preview-presentation .control-buttons .fa-play {
+  color: #7ddf0b;
+}
+body #presentation-modal .add-file .presentation-modal-body .preview-presentation .control-buttons .fa-trash-alt {
+  color: #ff5722;
+}
+body #presentation-modal .add-file .presentation-modal-footer .custom-file {
+  text-align: center;
+}
+body #presentation-modal .add-file .presentation-modal-footer .custom-file .file-label {
+  border-radius: 5px;
+  background-color: #17c6ac;
+  padding: 0.15rem 0;
+  color: #fff;
 }
 
 /*# sourceMappingURL=main.css.map */

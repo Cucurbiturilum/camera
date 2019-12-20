@@ -1,0 +1,173 @@
+body{
+  background-image: url(../images/computer-desk-electronics-keyboard-238118.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  #presentation-modal {
+    min-height: 25rem;
+    background-color: #fff;
+
+    .add-file {
+      min-height: 23rem;
+
+      .presentation-modal-head {
+        .presentation-modal-head-title {
+          width: 30%;
+          color: $secondary-color;
+          font-size: 1.2rem;
+          margin-right: 0.5rem;
+          @media (min-width: 1200px) {
+            width: 50%;
+            font-size: 2rem;
+          }
+
+          i {
+            color: $primary-color;
+            font-size: 2.3rem;
+          }
+        }
+
+        form {
+          width: 70%;
+          @media (min-width: 1200px) {
+            width: 50%;
+          }
+
+          .form-group {
+            .form-control {
+              width: 83%;
+
+              &:focus {
+                box-shadow: none;
+              }
+            }
+
+            .search-btn {
+              width: 15%;
+              text-align: right;
+              background-color: transparent;
+
+              i {
+                color: $font-color;
+                font-size: 1rem;
+              }
+            }
+          }
+        }
+      }
+
+      .presentation-modal-body {
+        height: 17rem;
+        margin-bottom: 1rem;
+        overflow-y: auto;
+
+        &::-webkit-scrollbar {
+          display: none;
+        }
+
+        .preview {
+          text-align: center;
+          margin-top: 2rem;
+
+          p {
+            color: $font-color;
+            font-size: 1.2rem;
+          }
+
+          img {
+            width: 20%;
+          }
+        }
+
+        .preview-presentation {
+          height: 120px;
+          display: flex;
+          align-items: center;
+          @media (max-width: 1200px) {
+            height: 90px;
+          }
+
+          .jpreview-image {
+            width: 150px;
+            height: 100px;
+            margin: 10px;
+            position: relative;
+            float: left;
+            background-repeat: no-repeat;
+            background-position: center center;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            @media (max-width: 1200px) {
+              width: 125px;
+              height: 75px;
+              margin: 7px;
+            }
+
+            img {
+              max-width: 100%;
+              max-height: 100%
+            }
+
+            &:after {
+              content: ".";
+              visibility: hidden;
+              display: block;
+              clear: both;
+            }
+          }
+
+          .preview-name {
+            color: $secondary-color;
+            font-weight: 500;
+            font-size: 1.2rem;
+          }
+
+          .preview-status {
+            color: #00acf9;
+            border-right: 1px solid #bcbcbc;
+            padding-right: 0.4rem;
+          }
+
+          .preview-size, .preview-type {
+            color: #bcbcbc;
+            padding-right: 0.4rem;
+          }
+          .preview-type{
+            border-right: 1px solid #bcbcbc;
+            color: #bcbcbc;
+            text-transform: uppercase;
+          }
+
+          .control-buttons {
+            margin-left: auto;
+
+            .fa-play {
+              color: #7ddf0b;
+            }
+
+            .fa-trash-alt {
+              color: #ff5722;
+            }
+          }
+        }
+      }
+
+      .presentation-modal-footer {
+
+        .custom-file {
+          text-align: center;
+
+          .file-label {
+            border-radius: 5px;
+            background-color: $primary-color;
+            padding: 0.15rem 0;
+            color: $main-font-color;
+          }
+        }
+      }
+    }
+
+  }
+}
+

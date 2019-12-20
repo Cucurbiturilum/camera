@@ -224,10 +224,10 @@
 }
 
 //Screem Share, Leave Meeting
-#screen-share-modal, #leave-modal, #invite-modal {
+#screen-share-modal, #leave-modal, #invite-modal, #start-modal, #presentation-modal {
   position: absolute;
   bottom: 15%;
-  width: 25%;
+  width: auto;
   background-color: rgba(255, 255, 255, 0.9);
   z-index: 2;
 
@@ -260,6 +260,7 @@
     &.danger {
       border: 1.5px solid $secondary-color;
       color: $secondary-color;
+      margin-right: 2rem;
 
       &:hover {
         background-color: $secondary-color;
@@ -290,5 +291,18 @@
   .leave-link {
     color: $secondary-color;
   }
+}
+
+#start-modal{
+  left: 5%;
+  @media (max-width: 1200px) {
+    left: 13%;
+  }
+}
+
+#presentation-modal{
+  width: 40%;
+  left: 5%;
+  bottom: 20%;
 }
 

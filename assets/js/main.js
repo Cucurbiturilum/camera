@@ -23,7 +23,6 @@ $(document).ready(function () {
     var screenShareModal = $('#screen-share-modal');
     var screenShareModalClose = $('#screen-share-modal-close');
 
-    //rightGroupModal.hide();
 
     screenShareModal.hide();
 
@@ -33,6 +32,39 @@ $(document).ready(function () {
 
     screenShareModalClose.click(function () {
         screenShareModal.hide();
+    });
+
+    //Presentation
+
+    var presentation = $ ('#presentation');
+    var presentationModal = $('#presentation-modal');
+    var presentationModalClose = $('#presentation-modal-close');
+
+    presentationModal.hide();
+
+    presentation.click(function () {
+        presentationModal.toggle();
+
+    });
+
+    presentationModalClose.click(function () {
+        presentationModal.hide();
+    });
+
+    //Start webinar
+
+    var startWebinar = $('#start');
+    var startWebinarModal = $('#start-modal');
+    var startWebinarModalClose = $('#start-modal-close');
+
+    startWebinarModal.hide();
+
+    startWebinar.click(function () {
+        startWebinarModal.toggle();
+    });
+
+    startWebinarModalClose.click(function () {
+        startWebinarModal.hide();
     });
 
     // Record
@@ -104,6 +136,11 @@ $(document).ready(function () {
         participantsModal.toggleClass('vs-hidden');
     });
 
+
+    //Input preview
+
+    $('.demo').jPreview();
+
 })
 
 // Mic indication
@@ -129,3 +166,5 @@ function draw() {
         .css('width', vol+'%')
         .attr('aria-valuenow', vol);
 }
+
+
