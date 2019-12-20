@@ -578,87 +578,89 @@
   left: calc(50% - 75px);
 }
 
-body {
+.preview-screen {
   background-image: url(../images/computer-desk-electronics-keyboard-238118.png);
   background-repeat: no-repeat;
   background-size: cover;
+  width: 100vw;
+  height: 100vh;
 }
-body #presentation-modal {
+.preview-screen #presentation-modal {
   min-height: 25rem;
   background-color: #fff;
 }
-body #presentation-modal .add-file {
+.preview-screen #presentation-modal .add-file {
   min-height: 23rem;
 }
-body #presentation-modal .add-file .presentation-modal-head .presentation-modal-head-title {
+.preview-screen #presentation-modal .add-file .presentation-modal-head .presentation-modal-head-title {
   width: 30%;
   color: #9c29b7;
   font-size: 1.2rem;
   margin-right: 0.5rem;
 }
 @media (min-width: 1200px) {
-  body #presentation-modal .add-file .presentation-modal-head .presentation-modal-head-title {
+  .preview-screen #presentation-modal .add-file .presentation-modal-head .presentation-modal-head-title {
     width: 50%;
     font-size: 2rem;
   }
 }
-body #presentation-modal .add-file .presentation-modal-head .presentation-modal-head-title i {
+.preview-screen #presentation-modal .add-file .presentation-modal-head .presentation-modal-head-title i {
   color: #17c6ac;
   font-size: 2.3rem;
 }
-body #presentation-modal .add-file .presentation-modal-head form {
+.preview-screen #presentation-modal .add-file .presentation-modal-head form {
   width: 70%;
 }
 @media (min-width: 1200px) {
-  body #presentation-modal .add-file .presentation-modal-head form {
+  .preview-screen #presentation-modal .add-file .presentation-modal-head form {
     width: 50%;
   }
 }
-body #presentation-modal .add-file .presentation-modal-head form .form-group .form-control {
+.preview-screen #presentation-modal .add-file .presentation-modal-head form .form-group .form-control {
   width: 83%;
 }
-body #presentation-modal .add-file .presentation-modal-head form .form-group .form-control:focus {
+.preview-screen #presentation-modal .add-file .presentation-modal-head form .form-group .form-control:focus {
   box-shadow: none;
 }
-body #presentation-modal .add-file .presentation-modal-head form .form-group .search-btn {
+.preview-screen #presentation-modal .add-file .presentation-modal-head form .form-group .search-btn {
   width: 15%;
   text-align: right;
   background-color: transparent;
 }
-body #presentation-modal .add-file .presentation-modal-head form .form-group .search-btn i {
+.preview-screen #presentation-modal .add-file .presentation-modal-head form .form-group .search-btn i {
   color: #606060;
   font-size: 1rem;
 }
-body #presentation-modal .add-file .presentation-modal-body {
+.preview-screen #presentation-modal .add-file .presentation-modal-body {
   height: 17rem;
   margin-bottom: 1rem;
   overflow-y: auto;
 }
-body #presentation-modal .add-file .presentation-modal-body::-webkit-scrollbar {
+.preview-screen #presentation-modal .add-file .presentation-modal-body::-webkit-scrollbar {
   display: none;
 }
-body #presentation-modal .add-file .presentation-modal-body .preview {
+.preview-screen #presentation-modal .add-file .presentation-modal-body .preview {
   text-align: center;
   margin-top: 2rem;
 }
-body #presentation-modal .add-file .presentation-modal-body .preview p {
+.preview-screen #presentation-modal .add-file .presentation-modal-body .preview p {
   color: #606060;
   font-size: 1.2rem;
 }
-body #presentation-modal .add-file .presentation-modal-body .preview img {
+.preview-screen #presentation-modal .add-file .presentation-modal-body .preview img {
   width: 20%;
 }
-body #presentation-modal .add-file .presentation-modal-body .preview-presentation {
+.preview-screen #presentation-modal .add-file .presentation-modal-body .preview-presentation {
   height: 120px;
   display: flex;
   align-items: center;
 }
 @media (max-width: 1200px) {
-  body #presentation-modal .add-file .presentation-modal-body .preview-presentation {
+  .preview-screen #presentation-modal .add-file .presentation-modal-body .preview-presentation {
     height: 90px;
   }
 }
-body #presentation-modal .add-file .presentation-modal-body .preview-presentation .jpreview-image {
+.preview-screen #presentation-modal .add-file .presentation-modal-body .preview-presentation .jpreview-image {
   width: 150px;
   height: 100px;
   margin: 10px;
@@ -672,54 +674,54 @@ body #presentation-modal .add-file .presentation-modal-body .preview-presentatio
   background-size: cover;
 }
 @media (max-width: 1200px) {
-  body #presentation-modal .add-file .presentation-modal-body .preview-presentation .jpreview-image {
+  .preview-screen #presentation-modal .add-file .presentation-modal-body .preview-presentation .jpreview-image {
     width: 125px;
     height: 75px;
     margin: 7px;
   }
 }
-body #presentation-modal .add-file .presentation-modal-body .preview-presentation .jpreview-image img {
+.preview-screen #presentation-modal .add-file .presentation-modal-body .preview-presentation .jpreview-image img {
   max-width: 100%;
   max-height: 100%;
 }
-body #presentation-modal .add-file .presentation-modal-body .preview-presentation .jpreview-image:after {
+.preview-screen #presentation-modal .add-file .presentation-modal-body .preview-presentation .jpreview-image:after {
   content: ".";
   visibility: hidden;
   display: block;
   clear: both;
 }
-body #presentation-modal .add-file .presentation-modal-body .preview-presentation .preview-name {
+.preview-screen #presentation-modal .add-file .presentation-modal-body .preview-presentation .preview-name {
   color: #9c29b7;
   font-weight: 500;
   font-size: 1.2rem;
 }
-body #presentation-modal .add-file .presentation-modal-body .preview-presentation .preview-status {
+.preview-screen #presentation-modal .add-file .presentation-modal-body .preview-presentation .preview-status {
   color: #00acf9;
   border-right: 1px solid #bcbcbc;
   padding-right: 0.4rem;
 }
-body #presentation-modal .add-file .presentation-modal-body .preview-presentation .preview-size, body #presentation-modal .add-file .presentation-modal-body .preview-presentation .preview-type {
+.preview-screen #presentation-modal .add-file .presentation-modal-body .preview-presentation .preview-size, .preview-screen #presentation-modal .add-file .presentation-modal-body .preview-presentation .preview-type {
   color: #bcbcbc;
   padding-right: 0.4rem;
 }
-body #presentation-modal .add-file .presentation-modal-body .preview-presentation .preview-type {
+.preview-screen #presentation-modal .add-file .presentation-modal-body .preview-presentation .preview-type {
   border-right: 1px solid #bcbcbc;
   color: #bcbcbc;
   text-transform: uppercase;
 }
-body #presentation-modal .add-file .presentation-modal-body .preview-presentation .control-buttons {
+.preview-screen #presentation-modal .add-file .presentation-modal-body .preview-presentation .control-buttons {
   margin-left: auto;
 }
-body #presentation-modal .add-file .presentation-modal-body .preview-presentation .control-buttons .fa-play {
+.preview-screen #presentation-modal .add-file .presentation-modal-body .preview-presentation .control-buttons .fa-play {
   color: #7ddf0b;
 }
-body #presentation-modal .add-file .presentation-modal-body .preview-presentation .control-buttons .fa-trash-alt {
+.preview-screen #presentation-modal .add-file .presentation-modal-body .preview-presentation .control-buttons .fa-trash-alt {
   color: #ff5722;
 }
-body #presentation-modal .add-file .presentation-modal-footer .custom-file {
+.preview-screen #presentation-modal .add-file .presentation-modal-footer .custom-file {
   text-align: center;
 }
-body #presentation-modal .add-file .presentation-modal-footer .custom-file .file-label {
+.preview-screen #presentation-modal .add-file .presentation-modal-footer .custom-file .file-label {
   border-radius: 5px;
   background-color: #17c6ac;
   padding: 0.15rem 0;

@@ -1,7 +1,9 @@
-body{
+.preview-screen{
   background-image: url(../images/computer-desk-electronics-keyboard-238118.png);
   background-repeat: no-repeat;
   background-size: cover;
+  width: 100vw;
+  height: 100vh;
   #presentation-modal {
     min-height: 25rem;
     background-color: #fff;
