@@ -1,0 +1,253 @@
+@import "main";
+
+.navbar {
+  background-color: $maim-color;
+  margin-bottom: 6rem;
+
+  .navbar-nav {
+    .nav-item {
+      .nav-link {
+        .nav-avatar {
+          height: 40px;
+        }
+
+        &.dropdown-toggle::after {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .navbar-avatar {
+    background-color: #fff;
+    height: 80px;
+    width: 80px;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+}
+
+.options {
+  margin-bottom: 10rem;
+
+  .nav-pills {
+    background-color: #D6D6D6;
+    border-radius: 10px;
+    min-height: 30rem;
+
+    .nav-link {
+      color: $font-color;
+      font-size: 1.5rem;
+      border-radius: 0;
+      margin: 0.5rem 0;
+      border-left: 3px solid transparent;
+
+      &.active {
+        background-color: transparent;
+        color: $primary-color;
+        border-left: 3px solid $primary-color;
+      }
+    }
+  }
+
+  .tab-content {
+    background-color: #D6D6D6;
+    border-radius: 10px;
+    min-height: 30rem;
+    padding: 2.5rem;
+    position: relative;
+
+    .profile {
+      .edit {
+        position: absolute;
+        top: 1.25rem;
+        right: 1.25rem;
+
+        i {
+          color: $primary-color;
+          font-size: 2rem;
+        }
+      }
+
+      .avatar {
+        background-color: #fff;
+        border-radius: 10px;
+        height: 220px;
+        width: 220px;
+        overflow: hidden;
+        padding: 0.4rem;
+      }
+
+      .personal-details {
+        .name {
+          color: #9c29b7;
+          font-size: 2.5rem;
+          margin-bottom: 0.5rem;
+        }
+
+        .company, .position, .phone, .email {
+          color: #606060;
+          font-size: 1.25rem;
+          margin-bottom: 0.5rem;
+        }
+      }
+
+      .topic {
+        color: #606060;
+        font-size: 1.25rem;
+      }
+
+      .value {
+        color: #606060;
+        font-size: 1.3rem;
+      }
+
+      .meeting-link {
+        color: $primary-color;
+        font-size: 1.25rem;
+        text-decoration: underline;
+      }
+    }
+
+    .meetings, .webinars, .recording {
+      .nav-link {
+        i {
+          color: $secondary-color;
+          font-size: 2rem;
+        }
+      }
+
+      .nav-tabs {
+        border: none;
+
+        .nav-item {
+          margin-bottom: 0;
+
+          .nav-link {
+            color: $secondary-color;
+            font-size: 1.5rem;
+            border-bottom: 1px solid transparent;
+
+            &.active {
+              background-color: transparent;
+              border-color: transparent;
+              border-bottom: 1px solid $secondary-color;
+            }
+
+            &:hover {
+              border: none;
+            }
+          }
+        }
+      }
+
+      .meeting {
+        .topic {
+          color: $primary-color;
+          font-size: 1.4rem;
+        }
+
+        .meeting-date {
+          color: #606060;
+          font-size: 1.1rem;
+        }
+      }
+
+      .start-video {
+        .form-group {
+          label {
+            color: $font-color;
+            font-size: 1.25rem;
+          }
+
+          .form-control {
+            min-height: 3rem;
+          }
+        }
+
+        .stream {
+          color: $font-color;
+          font-size: 1.25rem;
+        }
+
+        .form-check {
+          .form-check-input {
+            width: 1.25rem;
+            height: 1.25rem;
+            margin-right: 1rem;
+          }
+
+          .form-check-label {
+            color: $font-color;
+            font-size: 1.25rem;
+          }
+        }
+
+        .btn-cancel, .btn-submit {
+          color: $secondary-color;
+          font-size: 1.25rem;
+          padding: 0.3rem 2.5rem;
+          background-color: #fff;
+          border: 1px solid $secondary-color;
+          border-radius: 1.25rem;
+          min-width: 10rem;
+
+          &:focus {
+            box-shadow: none;
+          }
+        }
+        .btn-submit{
+          color: $primary-color;
+          border-color: $primary-color;
+        }
+      }
+    }
+
+    .recording {
+      label {
+        color: $font-color;
+        font-size: 1.25rem;
+        margin-right: 1rem;
+      }
+
+      #from-date, #to-date {
+        width: 15rem;
+      }
+
+      .searching {
+        background-color: #fff;
+        width: 19.2rem;
+        border-radius: 0.25rem;
+        margin-right: 4rem;
+
+        .form-control:focus {
+          box-shadow: none;
+        }
+
+        #search {
+          background-color: transparent;
+          border: none;
+          width: 85%;
+        }
+
+        .fa-search {
+          color: $font-color;
+          font-size: 1.25rem;
+        }
+      }
+
+      .btn-search {
+        color: $secondary-color;
+        font-size: 1.25rem;
+        border: 1px solid $secondary-color;
+        padding: 0.2rem 2rem;
+        border-radius: 0.25rem;
+        background-color: #fff;
+
+        &:focus {
+          box-shadow: none;
+        }
+      }
+    }
+  }
+}
