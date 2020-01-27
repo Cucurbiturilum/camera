@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="assets/css/login.css">
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="container">
+    <div class="row my-auto">
+        <div class="login col-xl-6 p-5">
+            <h1 class="text-uppercase text-center mb-3">log in</h1>
+            <form>
+                <div class="form-group">
+                    <label for="Email1">Email</label>
+                    <input type="email" class="form-control" id="Email1" aria-describedby="emailHelp"
+                           placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <label for="Password1">Password</label>
+                    <input type="password" class="form-control" id="Password1" placeholder="Password">
+                </div>
+                <div class="w-100 d-flex p-3">
+                    <div class="form-check d-inline-block">
+                        <input class="form-check-input" type="radio" id="Radios1"
+                               value="option1" checked>
+                        <label class="form-check-label" for="Radios1">
+                            Attendee
+                        </label>
+                    </div>
+                    <div class="form-check d-inline-block ml-auto">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="Radios2"
+                               value="option2">
+                        <label class="form-check-label" for="Radios2">
+                            Host
+                        </label>
+                    </div>
+                </div>
+                <div class="w-100 d-flex p-3">
+                    <div class="form-group form-check d-inline-block">
+                        <input type="checkbox" class="form-check-input" id="Check1">
+                        <label class="form-check-label" for="Check1">Remember me</label>
+                    </div>
+                    <a href="#" class="form-link text-uppercase ml-auto"><u>forgot password</u></a>
+                </div>
+                <button type="submit" class="btn btn-save w-100 text-uppercase">log in</button>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
