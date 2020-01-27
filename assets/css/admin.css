@@ -836,35 +836,48 @@
 .options .tab-content .meetings .nav-tabs .nav-item .nav-link:hover, .options .tab-content .webinars .nav-tabs .nav-item .nav-link:hover, .options .tab-content .recording .nav-tabs .nav-item .nav-link:hover {
   border: none;
 }
+.options .tab-content .meetings .meeting, .options .tab-content .webinars .meeting, .options .tab-content .recording .meeting {
+  margin-bottom: 1rem;
+}
 .options .tab-content .meetings .meeting .topic, .options .tab-content .webinars .meeting .topic, .options .tab-content .recording .meeting .topic {
   color: #17c6ac;
   font-size: 1.4rem;
 }
-.options .tab-content .meetings .meeting .meeting-date, .options .tab-content .webinars .meeting .meeting-date, .options .tab-content .recording .meeting .meeting-date {
+.options .tab-content .meetings .meeting .meeting-date, .options .tab-content .meetings .meeting .btn-start, .options .tab-content .webinars .meeting .meeting-date, .options .tab-content .webinars .meeting .btn-start, .options .tab-content .recording .meeting .meeting-date, .options .tab-content .recording .meeting .btn-start {
   color: #606060;
   font-size: 1.1rem;
+  margin-bottom: 0;
 }
-.options .tab-content .meetings .start-video .form-group label, .options .tab-content .webinars .start-video .form-group label, .options .tab-content .recording .start-video .form-group label {
+.options .tab-content .meetings .meeting .btn-start, .options .tab-content .webinars .meeting .btn-start, .options .tab-content .recording .meeting .btn-start {
+  padding: 0;
+}
+.options .tab-content .meetings .meeting .btn-start:focus, .options .tab-content .webinars .meeting .btn-start:focus, .options .tab-content .recording .meeting .btn-start:focus {
+  box-shadow: none;
+}
+.options .tab-content .meetings .start-video h2, .options .tab-content .meetings .scheduleStream h2, .options .tab-content .webinars .start-video h2, .options .tab-content .webinars .scheduleStream h2, .options .tab-content .recording .start-video h2, .options .tab-content .recording .scheduleStream h2 {
+  color: #17c6ac;
+}
+.options .tab-content .meetings .start-video .form-group label, .options .tab-content .meetings .scheduleStream .form-group label, .options .tab-content .webinars .start-video .form-group label, .options .tab-content .webinars .scheduleStream .form-group label, .options .tab-content .recording .start-video .form-group label, .options .tab-content .recording .scheduleStream .form-group label {
   color: #606060;
   font-size: 1.25rem;
 }
-.options .tab-content .meetings .start-video .form-group .form-control, .options .tab-content .webinars .start-video .form-group .form-control, .options .tab-content .recording .start-video .form-group .form-control {
+.options .tab-content .meetings .start-video .form-group .form-control, .options .tab-content .meetings .scheduleStream .form-group .form-control, .options .tab-content .webinars .start-video .form-group .form-control, .options .tab-content .webinars .scheduleStream .form-group .form-control, .options .tab-content .recording .start-video .form-group .form-control, .options .tab-content .recording .scheduleStream .form-group .form-control {
   min-height: 3rem;
 }
-.options .tab-content .meetings .start-video .stream, .options .tab-content .webinars .start-video .stream, .options .tab-content .recording .start-video .stream {
+.options .tab-content .meetings .start-video .stream, .options .tab-content .meetings .scheduleStream .stream, .options .tab-content .webinars .start-video .stream, .options .tab-content .webinars .scheduleStream .stream, .options .tab-content .recording .start-video .stream, .options .tab-content .recording .scheduleStream .stream {
   color: #606060;
   font-size: 1.25rem;
 }
-.options .tab-content .meetings .start-video .form-check .form-check-input, .options .tab-content .webinars .start-video .form-check .form-check-input, .options .tab-content .recording .start-video .form-check .form-check-input {
+.options .tab-content .meetings .start-video .form-check .form-check-input, .options .tab-content .meetings .scheduleStream .form-check .form-check-input, .options .tab-content .webinars .start-video .form-check .form-check-input, .options .tab-content .webinars .scheduleStream .form-check .form-check-input, .options .tab-content .recording .start-video .form-check .form-check-input, .options .tab-content .recording .scheduleStream .form-check .form-check-input {
   width: 1.25rem;
   height: 1.25rem;
   margin-right: 1rem;
 }
-.options .tab-content .meetings .start-video .form-check .form-check-label, .options .tab-content .webinars .start-video .form-check .form-check-label, .options .tab-content .recording .start-video .form-check .form-check-label {
+.options .tab-content .meetings .start-video .form-check .form-check-label, .options .tab-content .meetings .scheduleStream .form-check .form-check-label, .options .tab-content .webinars .start-video .form-check .form-check-label, .options .tab-content .webinars .scheduleStream .form-check .form-check-label, .options .tab-content .recording .start-video .form-check .form-check-label, .options .tab-content .recording .scheduleStream .form-check .form-check-label {
   color: #606060;
   font-size: 1.25rem;
 }
-.options .tab-content .meetings .start-video .btn-cancel, .options .tab-content .meetings .start-video .btn-submit, .options .tab-content .webinars .start-video .btn-cancel, .options .tab-content .webinars .start-video .btn-submit, .options .tab-content .recording .start-video .btn-cancel, .options .tab-content .recording .start-video .btn-submit {
+.options .tab-content .meetings .start-video .btn-cancel, .options .tab-content .meetings .start-video .btn-submit, .options .tab-content .meetings .scheduleStream .btn-cancel, .options .tab-content .meetings .scheduleStream .btn-submit, .options .tab-content .webinars .start-video .btn-cancel, .options .tab-content .webinars .start-video .btn-submit, .options .tab-content .webinars .scheduleStream .btn-cancel, .options .tab-content .webinars .scheduleStream .btn-submit, .options .tab-content .recording .start-video .btn-cancel, .options .tab-content .recording .start-video .btn-submit, .options .tab-content .recording .scheduleStream .btn-cancel, .options .tab-content .recording .scheduleStream .btn-submit {
   color: #9c29b7;
   font-size: 1.25rem;
   padding: 0.3rem 2.5rem;
@@ -873,12 +886,49 @@
   border-radius: 1.25rem;
   min-width: 10rem;
 }
-.options .tab-content .meetings .start-video .btn-cancel:focus, .options .tab-content .meetings .start-video .btn-submit:focus, .options .tab-content .webinars .start-video .btn-cancel:focus, .options .tab-content .webinars .start-video .btn-submit:focus, .options .tab-content .recording .start-video .btn-cancel:focus, .options .tab-content .recording .start-video .btn-submit:focus {
+.options .tab-content .meetings .start-video .btn-cancel:focus, .options .tab-content .meetings .start-video .btn-submit:focus, .options .tab-content .meetings .scheduleStream .btn-cancel:focus, .options .tab-content .meetings .scheduleStream .btn-submit:focus, .options .tab-content .webinars .start-video .btn-cancel:focus, .options .tab-content .webinars .start-video .btn-submit:focus, .options .tab-content .webinars .scheduleStream .btn-cancel:focus, .options .tab-content .webinars .scheduleStream .btn-submit:focus, .options .tab-content .recording .start-video .btn-cancel:focus, .options .tab-content .recording .start-video .btn-submit:focus, .options .tab-content .recording .scheduleStream .btn-cancel:focus, .options .tab-content .recording .scheduleStream .btn-submit:focus {
   box-shadow: none;
 }
-.options .tab-content .meetings .start-video .btn-submit, .options .tab-content .webinars .start-video .btn-submit, .options .tab-content .recording .start-video .btn-submit {
+.options .tab-content .meetings .start-video .btn-submit, .options .tab-content .meetings .scheduleStream .btn-submit, .options .tab-content .webinars .start-video .btn-submit, .options .tab-content .webinars .scheduleStream .btn-submit, .options .tab-content .recording .start-video .btn-submit, .options .tab-content .recording .scheduleStream .btn-submit {
   color: #17c6ac;
   border-color: #17c6ac;
+}
+.options .tab-content .meetings .scheduleStream h3, .options .tab-content .webinars .scheduleStream h3, .options .tab-content .recording .scheduleStream h3 {
+  color: #17c6ac;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.options .tab-content .meetings .scheduleStream .form-check, .options .tab-content .webinars .scheduleStream .form-check, .options .tab-content .recording .scheduleStream .form-check {
+  margin-bottom: 1rem;
+}
+.options .tab-content .meetings .scheduleStream .form-check .form-check-input, .options .tab-content .webinars .scheduleStream .form-check .form-check-input, .options .tab-content .recording .scheduleStream .form-check .form-check-input {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+.options .tab-content .meetings .scheduleStream .form-check .form-check-label, .options .tab-content .webinars .scheduleStream .form-check .form-check-label, .options .tab-content .recording .scheduleStream .form-check .form-check-label {
+  color: #606060;
+  font-size: 1.25rem;
+  margin-left: 1rem;
+}
+.options .tab-content .meetings .scheduleStream .form-check .dropdown .dropdown-toggle:focus, .options .tab-content .webinars .scheduleStream .form-check .dropdown .dropdown-toggle:focus, .options .tab-content .recording .scheduleStream .form-check .dropdown .dropdown-toggle:focus {
+  box-shadow: none;
+}
+.options .tab-content .meetings .scheduleStream .form-check .dropdown .dropdown-toggle .fa-ellipsis-v, .options .tab-content .webinars .scheduleStream .form-check .dropdown .dropdown-toggle .fa-ellipsis-v, .options .tab-content .recording .scheduleStream .form-check .dropdown .dropdown-toggle .fa-ellipsis-v {
+  color: #17c6ac;
+  font-size: 1.25rem;
+}
+.options .tab-content .meetings .scheduleStream .form-check .dropdown .dropdown-toggle:after, .options .tab-content .webinars .scheduleStream .form-check .dropdown .dropdown-toggle:after, .options .tab-content .recording .scheduleStream .form-check .dropdown .dropdown-toggle:after {
+  display: none;
+}
+.options .tab-content .meetings .scheduleStream .form-check .dropdown .dropdown-menu, .options .tab-content .webinars .scheduleStream .form-check .dropdown .dropdown-menu, .options .tab-content .recording .scheduleStream .form-check .dropdown .dropdown-menu {
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 0.8rem;
+}
+.options .tab-content .meetings .scheduleStream .form-check .dropdown .dropdown-menu .dropdown-item, .options .tab-content .webinars .scheduleStream .form-check .dropdown .dropdown-menu .dropdown-item, .options .tab-content .recording .scheduleStream .form-check .dropdown .dropdown-menu .dropdown-item {
+  color: #606060;
+}
+.options .tab-content .meetings .scheduleStream .form-check .dropdown .dropdown-menu .dropdown-item:hover, .options .tab-content .meetings .scheduleStream .form-check .dropdown .dropdown-menu .dropdown-item:active, .options .tab-content .meetings .scheduleStream .form-check .dropdown .dropdown-menu .dropdown-item:focus, .options .tab-content .webinars .scheduleStream .form-check .dropdown .dropdown-menu .dropdown-item:hover, .options .tab-content .webinars .scheduleStream .form-check .dropdown .dropdown-menu .dropdown-item:active, .options .tab-content .webinars .scheduleStream .form-check .dropdown .dropdown-menu .dropdown-item:focus, .options .tab-content .recording .scheduleStream .form-check .dropdown .dropdown-menu .dropdown-item:hover, .options .tab-content .recording .scheduleStream .form-check .dropdown .dropdown-menu .dropdown-item:active, .options .tab-content .recording .scheduleStream .form-check .dropdown .dropdown-menu .dropdown-item:focus {
+  background-color: transparent;
 }
 .options .tab-content .recording label {
   color: #606060;
@@ -916,6 +966,61 @@
 }
 .options .tab-content .recording .btn-search:focus {
   box-shadow: none;
+}
+.options .tab-content .attendee .btn-attendee {
+  color: #fff;
+  font-size: 1.5rem;
+  background-color: #17c6ac;
+  border-radius: 30px;
+  padding: 0.2rem 3rem;
+  margin-bottom: 4rem;
+}
+.options .tab-content .attendee .attendee-name {
+  color: #606060;
+  font-size: 1.25rem;
+}
+.options .tab-content .attendee .dropdown .dropdown-toggle:focus {
+  box-shadow: none;
+}
+.options .tab-content .attendee .dropdown .dropdown-toggle .fa-ellipsis-v {
+  color: #17c6ac;
+  font-size: 1.25rem;
+}
+.options .tab-content .attendee .dropdown .dropdown-toggle:after {
+  display: none;
+}
+.options .tab-content .attendee .dropdown .dropdown-menu {
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 0.8rem;
+}
+.options .tab-content .attendee .dropdown .dropdown-menu .dropdown-item {
+  color: #606060;
+}
+.options .tab-content .attendee .dropdown .dropdown-menu .dropdown-item:hover, .options .tab-content .attendee .dropdown .dropdown-menu .dropdown-item:active, .options .tab-content .attendee .dropdown .dropdown-menu .dropdown-item:focus {
+  background-color: transparent;
+}
+.options .tab-content #inviteAttendee .form-group label {
+  color: #606060;
+  font-size: 1.25rem;
+}
+.options .tab-content #inviteAttendee .form-group .form-control {
+  min-height: 3rem;
+}
+.options .tab-content #inviteAttendee .btn-cancel, .options .tab-content #inviteAttendee .btn-submit {
+  color: #9c29b7;
+  font-size: 1.25rem;
+  padding: 0.3rem 2.5rem;
+  background-color: #fff;
+  border: 1px solid #9c29b7;
+  border-radius: 1.25rem;
+  min-width: 10rem;
+}
+.options .tab-content #inviteAttendee .btn-cancel:focus, .options .tab-content #inviteAttendee .btn-submit:focus {
+  box-shadow: none;
+}
+.options .tab-content #inviteAttendee .btn-submit {
+  color: #17c6ac;
+  border-color: #17c6ac;
 }
 
 /*# sourceMappingURL=admin.css.map */

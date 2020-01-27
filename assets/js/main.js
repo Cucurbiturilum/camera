@@ -3,7 +3,7 @@ $(document).ready(function () {
     var chatPanelToggle = $('#chat-panel-toggle');
     var chatPanel = $('#chat-panel');
 
-        chatPanel.hide();
+    chatPanel.hide();
 
     chatPanelToggle.click(function () {
         chatPanel.toggle();
@@ -36,7 +36,7 @@ $(document).ready(function () {
 
     //Presentation
 
-    var presentation = $ ('#presentation');
+    var presentation = $('#presentation');
     var presentationModal = $('#presentation-modal');
     var presentationModalClose = $('#presentation-modal-close');
 
@@ -131,7 +131,7 @@ $(document).ready(function () {
 
     participantsModal.addClass('vs-hidden');
 
-     participantsToggle.click(function () {
+    participantsToggle.click(function () {
         leftGroupModal.hide();
         participantsModal.toggleClass('vs-hidden');
     });
@@ -152,7 +152,7 @@ function setup() {
     mic = new p5.AudioIn();
 
     // Start the audio context on a click/touch event
-    userStartAudio().then(function() {
+    userStartAudio().then(function () {
         mic.start();
     });
 }
@@ -163,7 +163,7 @@ function draw() {
     let vol = mic.getLevel() * 300;
 
     $('#mic-volume')
-        .css('width', vol+'%')
+        .css('width', vol + '%')
         .attr('aria-valuenow', vol);
 }
 
